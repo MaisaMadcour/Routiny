@@ -1,0 +1,6 @@
+# This repo only hosts the privacy policy page.
+*
+!docs/
+!docs/index.html
+!README.md
+!.gitignore
