@@ -34,18 +34,29 @@
   <li>التوقّعات تقريبية، وليست وسيلة لمنع الحمل ولا بديلاً عن استشارة الطبيبة.</li>
 </ul>
 
+<h3>«روتي» (المحادثة)</h3>
+<p>«روتي» صديقة داخل التطبيق تعمل بالذكاء الاصطناعي، وليست شخصاً حقيقياً. عندما تتحدثين معها:</p>
+<ul>
+  <li>تُرسَل رسائلك، مع روتينك لليوم وملاحظات قصيرة عنكِ من محادثات سابقة ولغة التطبيق، إلى خادمنا على Firebase، ومنه إلى <strong>Anthropic</strong> (نموذج Claude) لكتابة الرد. لا نرسل اسمك أو بريدك أو بيانات «دورتي».</li>
+  <li>تُحفَظ المحادثة على خادمنا مرتبطةً بمعرّف عشوائي لتثبيت التطبيق (وليس باسمك)، حتى تجديها عند فتح المحادثة مرة أخرى. أما الملاحظات القصيرة عنكِ فتُحفَظ على جهازك.</li>
+  <li>يمكنكِ حذف المحادثة كلها والملاحظات في أي وقت من زر «امسحي المحادثة» داخل المحادثة.</li>
+  <li>لا تقرأ فرقتنا محتوى المحادثات؛ نرى فقط أعداداً عامة (عدد الرسائل والمستخدمات يومياً).</li>
+  <li>ردود «روتي» للدعم والتشجيع فقط، وليست استشارة طبية أو نفسية.</li>
+</ul>
+
 <h2>2. البيانات التي تجمعها خدمات الطرف الثالث</h2>
 <p>يستخدم التطبيق خدمات من أطراف ثالثة قد تجمع بعض البيانات لتشغيل وظائفها:</p>
 <ul>
-  <li><strong>Unity LevelPlay (الإعلانات):</strong> منصّة وساطة إعلانية تعرض الإعلانات داخل التطبيق عبر شبكات إعلانية شريكة (مثل Unity Ads و ironSource Ads)، وقد تجمع معرّف الإعلانات، وعنوان الـ IP، ومعرّفات الجهاز، وبيانات الاستخدام، وموقعاً تقريبياً، لأغراض عرض الإعلانات وقياس أدائها.</li>
+  <li><strong>Unity LevelPlay (الإعلانات):</strong> منصّة وساطة إعلانية تعرض الإعلانات داخل التطبيق عبر شبكات إعلانية شريكة (مثل Unity Ads و ironSource Ads و InMobi)، وقد تجمع معرّف الإعلانات، وعنوان الـ IP، ومعرّفات الجهاز، وبيانات الاستخدام، وموقعاً تقريبياً، لأغراض عرض الإعلانات وقياس أدائها.</li>
   <li><strong>RevenueCat (الاشتراكات):</strong> لإدارة الاشتراك في النسخة الخالية من الإعلانات. يتلقّى معرّفاً مجهولاً للتطبيق وبيانات عملية الشراء من المتجر (نوع الاشتراك وتاريخه وحالته)، ولا يتلقّى بيانات بطاقتك أو اسمك.</li>
-  <li><strong>Firebase Analytics و Mixpanel (إحصاءات الاستخدام):</strong> لمعرفة كيفية استخدام التطبيق بشكل عام (مثل الشاشات التي تُفتح والميزات الأكثر استخداماً) لتحسينه. لا تتضمّن محتوى مهامك أو مذكراتك.</li>
+  <li><strong>Anthropic (محادثة «روتي»):</strong> تستقبل رسائلك إلى «روتي» لكتابة الرد فقط، كما هو موضّح أعلاه.</li>
+  <li><strong>Firebase Analytics (إحصاءات الاستخدام):</strong> لمعرفة كيفية استخدام التطبيق بشكل عام (مثل الشاشات التي تُفتح والميزات الأكثر استخداماً) لتحسينه. لا تتضمّن محتوى مهامك أو مذكراتك.</li>
   <li><strong>Meta (فيسبوك) App Events:</strong> لقياس أداء حملاتنا الإعلانية، وقد يستخدم معرّف الإعلانات وأحداثاً عامة داخل التطبيق (مثل تثبيت التطبيق أو فتحه).</li>
   <li><strong>TikTok App Events (على iOS):</strong> لقياس أداء إعلاناتنا على تيك توك عبر SKAdNetwork من Apple. يرسل فقط أحداث تثبيت التطبيق وفتحه، ومعرّف الإعلانات إذا وافقتِ على التتبّع، ولا يرسل أي شيء عمّا تفعلينه داخل التطبيق.</li>
   <li><strong>Firebase Cloud Messaging (الإشعارات):</strong> لإرسال الإشعارات، وقد تجمع رمز الجهاز (Device Token) ومعلومات أساسية عن الجهاز.</li>
   <li><strong>Cloud Firestore:</strong> لتحميل المقالات والاختبارات داخل التطبيق، ولحفظ رأيك إذا اخترتِ إرساله من «شاركينا رأيك» (تقييمك وما كتبتِه، مع رمز إشعارات جهازك ولغة التطبيق حتى يصلك ردّنا داخل التطبيق، دون اسمك أو بريدك).</li>
 </ul>
-<p>تخضع هذه البيانات لسياسات خصوصية مزوّدي الخدمة: <a href="https://unity.com/legal/privacy-policy">Unity</a> و <a href="https://www.revenuecat.com/privacy/">RevenueCat</a> و <a href="https://mixpanel.com/legal/privacy-policy/">Mixpanel</a> و <a href="https://www.facebook.com/privacy/policy/">Meta</a> و <a href="https://www.tiktok.com/legal/page/global/privacy-policy/en">TikTok</a> و <a href="https://policies.google.com/privacy">Google</a>.</p>
+<p>تخضع هذه البيانات لسياسات خصوصية مزوّدي الخدمة: <a href="https://unity.com/legal/privacy-policy">Unity</a> و <a href="https://www.revenuecat.com/privacy/">RevenueCat</a> و <a href="https://www.inmobi.com/privacy-policy">InMobi</a> و <a href="https://www.anthropic.com/legal/privacy">Anthropic</a> و <a href="https://www.facebook.com/privacy/policy/">Meta</a> و <a href="https://www.tiktok.com/legal/page/global/privacy-policy/en">TikTok</a> و <a href="https://policies.google.com/privacy">Google</a>.</p>
 
 <h2>الاشتراكات</h2>
 <p>يوفّر روتيني اشتراكاً شهرياً وسنوياً اختيارياً لإزالة الإعلانات. يتم الدفع وتجديد الاشتراك تلقائياً عبر حسابك في App Store أو Google Play، ويتجدّد ما لم تُلغيه قبل نهاية الفترة الحالية بـ 24 ساعة على الأقل. يمكنك إدارة الاشتراك أو إلغاؤه من إعدادات حسابك في المتجر. لا نحصل نحن على بيانات الدفع. شروط الاستخدام: <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">شروط Apple القياسية (EULA)</a> على iOS، و<a href="https://play.google.com/about/play-terms/">شروط Google Play</a> على Android.</p>
@@ -63,7 +74,7 @@
 <p>التطبيق غير موجَّه للأطفال دون 13 عاماً، وبما أنه يعرض إعلانات فهو غير مُصنَّف ضمن فئة الأطفال (Kids).</p>
 
 <h2>6. الاحتفاظ بالبيانات وحذفها</h2>
-<p>بياناتك المحلية تبقى على جهازك ويمكنك حذفها بالكامل من خلال خيار "مسح البيانات" داخل التطبيق أو بإلغاء تثبيت التطبيق.</p>
+<p>بياناتك المحلية تبقى على جهازك ويمكنك حذفها بالكامل من خلال خيار "مسح البيانات" داخل التطبيق أو بإلغاء تثبيت التطبيق. محادثة «روتي» المحفوظة على خادمنا تُحذَف من زر «امسحي المحادثة»، أو راسلينا لحذفها.</p>
 
 <h2>7. التغييرات على هذه السياسة</h2>
 <p>قد نُحدِّث هذه السياسة من وقت لآخر، وسننشر أي تحديث على هذه الصفحة.</p>
@@ -90,18 +101,29 @@
   <li>gives estimates only. It is not contraception and not a substitute for a doctor.</li>
 </ul>
 
+<h3>"Ruti" (chat)</h3>
+<p>Ruti is an AI-powered friend inside the app, not a real person. When you chat with her:</p>
+<ul>
+  <li>Your messages, with today's routine, short notes about you from earlier chats and the app language, go to our server on Firebase and from there to <strong>Anthropic</strong> (the Claude model) to write her reply. We never send your name, email or "My cycle" data.</li>
+  <li>The chat is saved on our server under a random ID for your app install (not your name), so you find it when you open the chat again. The short notes about you are stored on your device.</li>
+  <li>You can delete the whole chat and the notes at any time with the "Erase the chat" button in the chat.</li>
+  <li>Our team does not read chat content; we only see general counts (messages and users per day).</li>
+  <li>Ruti's replies are for support and encouragement only, not medical or psychological advice.</li>
+</ul>
+
 <h2>2. Data collected by third-party services</h2>
 <p>The app uses third-party services that may collect data to provide their functionality:</p>
 <ul>
-  <li><strong>Unity LevelPlay (Ads):</strong> an ad-mediation platform that displays in-app ads through partner ad networks (such as Unity Ads and ironSource Ads). May collect the advertising ID, IP address, device identifiers, usage data, and coarse location for ad delivery and measurement.</li>
+  <li><strong>Unity LevelPlay (Ads):</strong> an ad-mediation platform that displays in-app ads through partner ad networks (such as Unity Ads, ironSource Ads and InMobi). May collect the advertising ID, IP address, device identifiers, usage data, and coarse location for ad delivery and measurement.</li>
   <li><strong>RevenueCat (Subscriptions):</strong> manages the optional ad-free subscription. It receives an anonymous app user ID and the store's purchase data (plan, dates, and status). It does not receive your card details or your name.</li>
-  <li><strong>Firebase Analytics and Mixpanel (Usage analytics):</strong> to understand how the app is used in general (such as screens opened and features used) so we can improve it. This never includes the content of your tasks or journal.</li>
+  <li><strong>Anthropic ("Ruti" chat):</strong> receives your messages to Ruti only to write her reply, as described above.</li>
+  <li><strong>Firebase Analytics (Usage analytics):</strong> to understand how the app is used in general (such as screens opened and features used) so we can improve it. This never includes the content of your tasks or journal.</li>
   <li><strong>Meta (Facebook) App Events:</strong> to measure our ad campaigns. May use the advertising ID and general in-app events (such as installing or opening the app).</li>
   <li><strong>TikTok App Events (iOS):</strong> to measure our TikTok ads through Apple's SKAdNetwork. It sends only app install and open events, plus the advertising ID if you allow tracking, and nothing about what you do inside the app.</li>
   <li><strong>Firebase Cloud Messaging (Notifications):</strong> to deliver push notifications. May collect a device token and basic device information.</li>
   <li><strong>Cloud Firestore:</strong> to load articles and tests inside the app, and to store your feedback if you choose to send it from "Share your opinion" (your rating and what you wrote, plus your device's notification token and app language so our reply reaches you in the app; never your name or email).</li>
 </ul>
-<p>This data is governed by the providers' privacy policies: <a href="https://unity.com/legal/privacy-policy">Unity</a>, <a href="https://www.revenuecat.com/privacy/">RevenueCat</a>, <a href="https://mixpanel.com/legal/privacy-policy/">Mixpanel</a>, <a href="https://www.facebook.com/privacy/policy/">Meta</a>, <a href="https://www.tiktok.com/legal/page/global/privacy-policy/en">TikTok</a>, and <a href="https://policies.google.com/privacy">Google</a>.</p>
+<p>This data is governed by the providers' privacy policies: <a href="https://unity.com/legal/privacy-policy">Unity</a>, <a href="https://www.revenuecat.com/privacy/">RevenueCat</a>, <a href="https://www.inmobi.com/privacy-policy">InMobi</a>, <a href="https://www.anthropic.com/legal/privacy">Anthropic</a>, <a href="https://www.facebook.com/privacy/policy/">Meta</a>, <a href="https://www.tiktok.com/legal/page/global/privacy-policy/en">TikTok</a>, and <a href="https://policies.google.com/privacy">Google</a>.</p>
 
 <h2>Subscriptions</h2>
 <p>Routiny offers an optional monthly and yearly subscription that removes ads. Payment is charged to your App Store or Google Play account, and the subscription renews automatically unless you cancel at least 24 hours before the end of the current period. You can manage or cancel it in your store account settings. We never receive your payment details. Terms of Use: the <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">standard Apple Terms of Use (EULA)</a> on iOS, and the <a href="https://play.google.com/about/play-terms/">Google Play Terms of Service</a> on Android.</p>
@@ -119,7 +141,7 @@
 <p>The app is not directed to children under 13, and because it shows ads it is not in the Kids category.</p>
 
 <h2>6. Data retention and deletion</h2>
-<p>Your local data stays on your device and can be fully removed via the in-app "Clear data" option or by uninstalling the app.</p>
+<p>Your local data stays on your device and can be fully removed via the in-app "Clear data" option or by uninstalling the app. Your Ruti chat kept on our server is deleted with the "Erase the chat" button, or by emailing us.</p>
 
 <h2>7. Changes to this policy</h2>
 <p>We may update this policy from time to time and will post any changes on this page.</p>
