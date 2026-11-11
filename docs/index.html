@@ -18,17 +18,28 @@
 
 <!-- ═══════════════ العربية ═══════════════ -->
 <h1>سياسة الخصوصية — روتيني</h1>
-<p class="updated">آخر تحديث: أكتوبر 2026</p>
+<p class="updated">آخر تحديث: نوفمبر 2026</p>
 
 <p>مرحباً بك في تطبيق <strong>روتيني</strong> (المتوفّر على Android و iOS). نحن في <strong>Orbitly Tech</strong> نلتزم بحماية خصوصيتك. توضّح هذه السياسة البيانات التي يتعامل معها التطبيق وكيفية استخدامها.</p>
 
-<h2>1. البيانات التي تُخزَّن على جهازك</h2>
-<p>جميع بياناتك داخل التطبيق — المهام، الروتين اليومي، جلسات التركيز، التأملات والمذكرات، تتبّع شرب الماء، وحالتك المزاجية — تُخزَّن <strong>محلياً على جهازك فقط</strong> ولا نقوم نحن بإرسالها أو حفظها على أي خادم خاص بنا.</p>
+<h2>1. بياناتك: على جهازك، وفي حسابك إذا اخترتِ</h2>
+<p>جميع بياناتك داخل التطبيق — المهام، الروتين اليومي، جلسات التركيز، التأملات والمذكرات، تتبّع شرب الماء، وحالتك المزاجية — تُخزَّن <strong>محلياً على جهازك</strong>. إذا لم تُنشئي حساباً، تبقى على جهازك فقط ولا نحفظها على أي خادم خاص بنا.</p>
+
+<h3>الحساب الاختياري (Google أو Apple)</h3>
+<p>يمكنكِ إنشاء حساب في «حسابي» حتى تحتفظي بنسخة من بياناتك وتسترجعيها على أي جهاز. الحساب <strong>اختياري</strong>، والتطبيق يعمل كاملاً بدونه.</p>
+<ul>
+  <li><strong>تسجيل الدخول:</strong> يتم عبر Google أو Apple من خلال Firebase Authentication. نتلقّى اسمك وبريدك الإلكتروني (أو بريد Apple المخفي إذا اخترتِ إخفاءه) ومعرّف الحساب. لا نرى كلمة مرورك أبداً.</li>
+  <li><strong>ما يُحفَظ في حسابك:</strong> نسخة من مهامك وروتينك وجلسات التركيز وشرب الماء وتقدّم الأذكار والسبحة والقرآن ونتائج الاختبارات وإعداداتك واسمك في التطبيق، على Cloud Firestore (من Google). تُنقَل مشفّرة (HTTPS)، وقواعد الحماية لا تسمح بقراءتها أو تعديلها إلا لحسابك أنتِ.</li>
+  <li><strong>البيانات الخاصة</strong> («دورتي»، و«مذكراتي»، و«حاسة بإيه»، وما تتذكّره «روتي» عنكِ): لا تُرفَع إلا إذا اخترتِ «احفظيها برمز سري» في «حسابي» ← «دورتي ومذكراتي». عندها تُشفَّر <strong>على جهازك</strong> قبل رفعها (AES-256 بمفتاح يُشتقّ من رمزك ولا يغادر جهازك)، فلا نستطيع نحن ولا Google قراءتها. إذا نسيتِ الرمز لا يمكن استرجاع هذه النسخة، ويمكنكِ البدء بنسخة جديدة.</li>
+  <li><strong>صورتك الشخصية</strong> تبقى على جهازك فقط ولا تُرفَع.</li>
+  <li>نستخدم هذه النسخة <strong>فقط</strong> لحفظ بياناتك ومزامنتها بين أجهزتك. لا نستخدمها للإعلانات أو الإحصاءات، ولا نبيعها ولا نشاركها مع أحد.</li>
+  <li>يرتبط اشتراكك (إن وُجد) بحسابك عبر RevenueCat، حتى ينتقل معكِ إلى أي جهاز.</li>
+</ul>
 
 <h3>متابعة الدورة الشهرية («دورتي»)</h3>
 <p>قسم «دورتي» يتيح لكِ تسجيل مواعيد دورتك، وإجاباتك عن «حاسة بإيه»، وأيام القضاء. هذه البيانات الصحية:</p>
 <ul>
-  <li>تُحفَظ <strong>على جهازك فقط</strong>، ولا تُرسَل إلينا ولا إلى أي طرف ثالث، ولا تُحفَظ على أي خادم.</li>
+  <li>تُحفَظ <strong>على جهازك</strong>، ولا تُرسَل إلى أي طرف ثالث. لا تغادر جهازك إلا إذا فعّلتِ حفظها في حسابك، وعندها تُرفَع <strong>مشفّرة برمزك</strong> فقط كما هو موضّح أعلاه، فلا يستطيع أحد غيركِ قراءتها.</li>
   <li>لا تُرسَل إلى أي خدمة إحصاءات أو إعلانات. قد تسجّل الإحصاءات العامة فقط أنكِ فتحتِ القسم، دون أي تاريخ أو عَرَض أو إجابة.</li>
   <li>يمكنكِ قفل القسم برقم سري من إعداداته، وحذف كل بياناته في أي وقت من «امسحي كل بيانات الدورة».</li>
   <li>التوقّعات تقريبية، وليست وسيلة لمنع الحمل ولا بديلاً عن استشارة الطبيبة.</li>
@@ -48,18 +59,19 @@
 <p>يستخدم التطبيق خدمات من أطراف ثالثة قد تجمع بعض البيانات لتشغيل وظائفها:</p>
 <ul>
   <li><strong>Unity LevelPlay (الإعلانات):</strong> منصّة وساطة إعلانية تعرض الإعلانات داخل التطبيق عبر شبكات إعلانية شريكة (مثل Unity Ads و ironSource Ads و InMobi)، وقد تجمع معرّف الإعلانات، وعنوان الـ IP، ومعرّفات الجهاز، وبيانات الاستخدام، وموقعاً تقريبياً، لأغراض عرض الإعلانات وقياس أدائها.</li>
-  <li><strong>RevenueCat (الاشتراكات):</strong> لإدارة الاشتراك في النسخة الخالية من الإعلانات. يتلقّى معرّفاً مجهولاً للتطبيق وبيانات عملية الشراء من المتجر (نوع الاشتراك وتاريخه وحالته)، ولا يتلقّى بيانات بطاقتك أو اسمك.</li>
+  <li><strong>RevenueCat (الاشتراكات والمشتريات):</strong> لإدارة الاشتراك في النسخة الخالية من الإعلانات و«اعزمينا على فنجان قهوة». يتلقّى معرّفاً مجهولاً للتطبيق (أو معرّف حسابك إذا سجّلتِ الدخول) وبيانات عملية الشراء من المتجر (نوعها وتاريخها وحالتها)، ولا يتلقّى بيانات بطاقتك أو اسمك.</li>
   <li><strong>Anthropic (محادثة «روتي»):</strong> تستقبل رسائلك إلى «روتي» لكتابة الرد فقط، كما هو موضّح أعلاه.</li>
   <li><strong>Firebase Analytics (إحصاءات الاستخدام):</strong> لمعرفة كيفية استخدام التطبيق بشكل عام (مثل الشاشات التي تُفتح والميزات الأكثر استخداماً) لتحسينه. لا تتضمّن محتوى مهامك أو مذكراتك.</li>
   <li><strong>Meta (فيسبوك) App Events:</strong> لقياس أداء حملاتنا الإعلانية، وقد يستخدم معرّف الإعلانات وأحداثاً عامة داخل التطبيق (مثل تثبيت التطبيق أو فتحه).</li>
   <li><strong>TikTok App Events (على iOS):</strong> لقياس أداء إعلاناتنا على تيك توك عبر SKAdNetwork من Apple. يرسل فقط أحداث تثبيت التطبيق وفتحه، ومعرّف الإعلانات إذا وافقتِ على التتبّع، وعند فتح شاشة الدفع وعند الاشتراك: نوع الخطة (شهري أو سنوي) وسعرها وعملتها. ولا يرسل أي شيء آخر عمّا تفعلينه داخل التطبيق.</li>
   <li><strong>Firebase Cloud Messaging (الإشعارات):</strong> لإرسال الإشعارات، وقد تجمع رمز الجهاز (Device Token) ومعلومات أساسية عن الجهاز.</li>
-  <li><strong>Cloud Firestore:</strong> لتحميل المقالات والاختبارات داخل التطبيق، ولحفظ رأيك إذا اخترتِ إرساله من «شاركينا رأيك» (تقييمك وما كتبتِه، مع رمز إشعارات جهازك ولغة التطبيق حتى يصلك ردّنا داخل التطبيق، دون اسمك أو بريدك).</li>
+  <li><strong>Firebase Authentication (الحساب الاختياري):</strong> لتسجيل الدخول بـ Google أو Apple، ويحفظ اسمك وبريدك ومعرّف حسابك.</li>
+  <li><strong>Cloud Firestore:</strong> لتحميل المقالات والاختبارات داخل التطبيق، ولحفظ نسخة بياناتك إذا أنشأتِ حساباً (كما هو موضّح أعلاه)، ولحفظ رأيك إذا اخترتِ إرساله من «شاركينا رأيك» (تقييمك وما كتبتِه، مع رمز إشعارات جهازك ولغة التطبيق حتى يصلك ردّنا داخل التطبيق، دون اسمك أو بريدك).</li>
 </ul>
 <p>تخضع هذه البيانات لسياسات خصوصية مزوّدي الخدمة: <a href="https://unity.com/legal/privacy-policy">Unity</a> و <a href="https://www.revenuecat.com/privacy/">RevenueCat</a> و <a href="https://www.inmobi.com/privacy-policy">InMobi</a> و <a href="https://www.anthropic.com/legal/privacy">Anthropic</a> و <a href="https://www.facebook.com/privacy/policy/">Meta</a> و <a href="https://www.tiktok.com/legal/page/global/privacy-policy/en">TikTok</a> و <a href="https://policies.google.com/privacy">Google</a>.</p>
 
 <h2>الاشتراكات</h2>
-<p>يوفّر روتيني اشتراكاً شهرياً وسنوياً اختيارياً لإزالة الإعلانات. يتم الدفع وتجديد الاشتراك تلقائياً عبر حسابك في App Store أو Google Play، ويتجدّد ما لم تُلغيه قبل نهاية الفترة الحالية بـ 24 ساعة على الأقل. يمكنك إدارة الاشتراك أو إلغاؤه من إعدادات حسابك في المتجر. لا نحصل نحن على بيانات الدفع. شروط الاستخدام: <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">شروط Apple القياسية (EULA)</a> على iOS، و<a href="https://play.google.com/about/play-terms/">شروط Google Play</a> على Android.</p>
+<p>يوفّر روتيني اشتراكاً شهرياً وسنوياً اختيارياً لإزالة الإعلانات. يتم الدفع وتجديد الاشتراك تلقائياً عبر حسابك في App Store أو Google Play، ويتجدّد ما لم تُلغيه قبل نهاية الفترة الحالية بـ 24 ساعة على الأقل. يمكنك إدارة الاشتراك أو إلغاؤه من إعدادات حسابك في المتجر. ويمكنكِ أيضاً دعمنا بشراء اختياري لمرة واحدة («اعزمينا على فنجان قهوة») عبر المتجر نفسه، وهو هدية لا تفتح أي ميزة إضافية. لا نحصل نحن على بيانات الدفع. شروط الاستخدام: <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">شروط Apple القياسية (EULA)</a> على iOS، و<a href="https://play.google.com/about/play-terms/">شروط Google Play</a> على Android.</p>
 <h2>3. تتبّع الإعلانات على iOS</h2>
 <p>على أجهزة iOS، قد يطلب التطبيق إذن التتبّع (App Tracking Transparency) لعرض إعلانات أكثر ملاءمة. يمكنك <strong>رفض</strong> هذا الإذن، وسيظل التطبيق يعمل وتظهر إعلانات غير مخصّصة.</p>
 
@@ -67,7 +79,7 @@
 <ul>
   <li><strong>الإشعارات:</strong> لتذكيرك بمهامك وجلسات التركيز (اختياري).</li>
   <li><strong>الصور/الكاميرا:</strong> لاختيار صورة شخصية (أفاتار) تُحفَظ محلياً على جهازك فقط.</li>
-  <li><strong>الإنترنت:</strong> لتحميل الإعلانات وأصوات التركيز واستقبال الإشعارات.</li>
+  <li><strong>الإنترنت:</strong> لتحميل الإعلانات وأصوات التركيز واستقبال الإشعارات، ولمزامنة حسابك إذا أنشأتِه.</li>
 </ul>
 
 <h2>5. خصوصية الأطفال</h2>
@@ -75,6 +87,7 @@
 
 <h2>6. الاحتفاظ بالبيانات وحذفها</h2>
 <p>بياناتك المحلية تبقى على جهازك ويمكنك حذفها بالكامل من خلال خيار "مسح البيانات" داخل التطبيق أو بإلغاء تثبيت التطبيق. محادثة «روتي» المحفوظة على خادمنا تُحذَف من زر «امسحي المحادثة»، أو راسلينا لحذفها.</p>
+<p>إذا أنشأتِ حساباً: نحتفظ بنسخة بياناتك ما دام حسابك موجوداً. من «حسابي» ← <strong>«مسح الحساب»</strong> تُحذَف فوراً كل بياناتك المحفوظة في حسابك والحساب نفسه من خوادمنا. وعند «تسجيل الخروج» تختارين أن تبقى بياناتك على الجهاز أو تُمسَح منه. ويمكنكِ أيضاً مراسلتنا لحذف حسابك.</p>
 
 <h2>7. التغييرات على هذه السياسة</h2>
 <p>قد نُحدِّث هذه السياسة من وقت لآخر، وسننشر أي تحديث على هذه الصفحة.</p>
@@ -85,17 +98,28 @@
 <!-- ═══════════════ English ═══════════════ -->
 <div class="en">
 <h1>Routiny — Privacy Policy</h1>
-<p class="updated">Last updated: October 2026</p>
+<p class="updated">Last updated: November 2026</p>
 
 <p>Welcome to <strong>Routiny</strong> (available on Android and iOS). We at <strong>Orbitly Tech</strong> are committed to protecting your privacy. This policy explains what data the app handles and how it is used.</p>
 
-<h2>1. Data stored on your device</h2>
-<p>All of your in-app data — tasks, daily routines, focus sessions, reflections and journal entries, water tracking, and mood — is stored <strong>locally on your device only</strong>. We do not send or store it on any server of ours.</p>
+<h2>1. Your data: on your device, and in your account if you choose</h2>
+<p>All of your in-app data — tasks, daily routines, focus sessions, reflections and journal entries, water tracking, and mood — is stored <strong>locally on your device</strong>. If you don't create an account, it stays on your device only and we don't store it on any server of ours.</p>
+
+<h3>Optional account (Google or Apple)</h3>
+<p>You can create an account in "My account" to keep a copy of your data and restore it on any device. The account is <strong>optional</strong>; the app works fully without it.</p>
+<ul>
+  <li><strong>Sign-in:</strong> with Google or Apple through Firebase Authentication. We receive your name, email address (or Apple's private relay address if you hide it) and an account ID. We never see your password.</li>
+  <li><strong>What your account keeps:</strong> a copy of your tasks, routines, focus sessions, water tracking, adhkar, tasbeeh and Quran progress, test results, settings and your name in the app, in Cloud Firestore (by Google). It travels encrypted (HTTPS), and security rules let only your own account read or change it.</li>
+  <li><strong>Private data</strong> ("My cycle", "My journal", "How do you feel" and what Ruti remembers about you): uploaded only if you choose "Save with a passcode" in "My account" → "My cycle &amp; journal". It is then encrypted <strong>on your device</strong> before upload (AES-256 with a key derived from your passcode that never leaves your device), so neither we nor Google can read it. A forgotten passcode can't be recovered; you can start a new private copy.</li>
+  <li><strong>Your profile photo</strong> stays on your device only and is never uploaded.</li>
+  <li>We use this copy <strong>only</strong> to keep your data and sync it between your devices. We never use it for ads or analytics, and never sell or share it.</li>
+  <li>Your subscription (if any) is linked to your account through RevenueCat, so it follows you to any device.</li>
+</ul>
 
 <h3>Period tracking ("My cycle")</h3>
 <p>The "My cycle" section lets you log your period dates, your answers to "How do you feel", and days to make up. This health data:</p>
 <ul>
-  <li>is stored <strong>on your device only</strong>. It is never sent to us or to any third party, and never stored on any server.</li>
+  <li>is stored <strong>on your device</strong> and never sent to any third party. It leaves your device only if you choose to keep it in your account, and then only <strong>encrypted with your passcode</strong> as described above, so no one but you can read it.</li>
   <li>is never sent to any analytics or advertising service. General analytics may record only that you opened the section, never a date, symptom or answer.</li>
   <li>can be locked with a PIN from the section's settings, and erased at any time with "Erase all cycle data".</li>
   <li>gives estimates only. It is not contraception and not a substitute for a doctor.</li>
@@ -115,18 +139,19 @@
 <p>The app uses third-party services that may collect data to provide their functionality:</p>
 <ul>
   <li><strong>Unity LevelPlay (Ads):</strong> an ad-mediation platform that displays in-app ads through partner ad networks (such as Unity Ads, ironSource Ads and InMobi). May collect the advertising ID, IP address, device identifiers, usage data, and coarse location for ad delivery and measurement.</li>
-  <li><strong>RevenueCat (Subscriptions):</strong> manages the optional ad-free subscription. It receives an anonymous app user ID and the store's purchase data (plan, dates, and status). It does not receive your card details or your name.</li>
+  <li><strong>RevenueCat (Subscriptions and purchases):</strong> manages the optional ad-free subscription and "Buy us a coffee". It receives an anonymous app user ID (or your account ID if you sign in) and the store's purchase data (type, dates, and status). It does not receive your card details or your name.</li>
   <li><strong>Anthropic ("Ruti" chat):</strong> receives your messages to Ruti only to write her reply, as described above.</li>
   <li><strong>Firebase Analytics (Usage analytics):</strong> to understand how the app is used in general (such as screens opened and features used) so we can improve it. This never includes the content of your tasks or journal.</li>
   <li><strong>Meta (Facebook) App Events:</strong> to measure our ad campaigns. May use the advertising ID and general in-app events (such as installing or opening the app).</li>
   <li><strong>TikTok App Events (iOS):</strong> to measure our TikTok ads through Apple's SKAdNetwork. It sends only app install and open events, the advertising ID if you allow tracking, and, when you open the payment screen and when you subscribe, the plan (monthly or yearly), its price and currency. It sends nothing else about what you do inside the app.</li>
   <li><strong>Firebase Cloud Messaging (Notifications):</strong> to deliver push notifications. May collect a device token and basic device information.</li>
-  <li><strong>Cloud Firestore:</strong> to load articles and tests inside the app, and to store your feedback if you choose to send it from "Share your opinion" (your rating and what you wrote, plus your device's notification token and app language so our reply reaches you in the app; never your name or email).</li>
+  <li><strong>Firebase Authentication (Optional account):</strong> to sign in with Google or Apple. Stores your name, email and account ID.</li>
+  <li><strong>Cloud Firestore:</strong> to load articles and tests inside the app, to keep the copy of your data if you create an account (as described above), and to store your feedback if you choose to send it from "Share your opinion" (your rating and what you wrote, plus your device's notification token and app language so our reply reaches you in the app; never your name or email).</li>
 </ul>
 <p>This data is governed by the providers' privacy policies: <a href="https://unity.com/legal/privacy-policy">Unity</a>, <a href="https://www.revenuecat.com/privacy/">RevenueCat</a>, <a href="https://www.inmobi.com/privacy-policy">InMobi</a>, <a href="https://www.anthropic.com/legal/privacy">Anthropic</a>, <a href="https://www.facebook.com/privacy/policy/">Meta</a>, <a href="https://www.tiktok.com/legal/page/global/privacy-policy/en">TikTok</a>, and <a href="https://policies.google.com/privacy">Google</a>.</p>
 
 <h2>Subscriptions</h2>
-<p>Routiny offers an optional monthly and yearly subscription that removes ads. Payment is charged to your App Store or Google Play account, and the subscription renews automatically unless you cancel at least 24 hours before the end of the current period. You can manage or cancel it in your store account settings. We never receive your payment details. Terms of Use: the <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">standard Apple Terms of Use (EULA)</a> on iOS, and the <a href="https://play.google.com/about/play-terms/">Google Play Terms of Service</a> on Android.</p>
+<p>Routiny offers an optional monthly and yearly subscription that removes ads. Payment is charged to your App Store or Google Play account, and the subscription renews automatically unless you cancel at least 24 hours before the end of the current period. You can manage or cancel it in your store account settings. You can also support us with an optional one-time purchase ("Buy us a coffee") through the same store; it is a gift and unlocks nothing extra. We never receive your payment details. Terms of Use: the <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">standard Apple Terms of Use (EULA)</a> on iOS, and the <a href="https://play.google.com/about/play-terms/">Google Play Terms of Service</a> on Android.</p>
 <h2>3. Ad tracking on iOS</h2>
 <p>On iOS, the app may ask for tracking permission (App Tracking Transparency) to show more relevant ads. You can <strong>decline</strong>; the app keeps working and shows non-personalized ads instead.</p>
 
@@ -134,7 +159,7 @@
 <ul>
   <li><strong>Notifications:</strong> to remind you of tasks and focus sessions (optional).</li>
   <li><strong>Photos/Camera:</strong> to pick a profile avatar, stored locally on your device only.</li>
-  <li><strong>Internet:</strong> to load ads, focus sounds, and receive notifications.</li>
+  <li><strong>Internet:</strong> to load ads, focus sounds, receive notifications, and sync your account if you create one.</li>
 </ul>
 
 <h2>5. Children's privacy</h2>
@@ -142,6 +167,7 @@
 
 <h2>6. Data retention and deletion</h2>
 <p>Your local data stays on your device and can be fully removed via the in-app "Clear data" option or by uninstalling the app. Your Ruti chat kept on our server is deleted with the "Erase the chat" button, or by emailing us.</p>
+<p>If you create an account, we keep the copy of your data for as long as the account exists. "My account" → <strong>"Delete account"</strong> immediately deletes all the data kept in your account and the account itself from our servers. When you sign out, you choose whether your data stays on the device or is erased from it. You can also email us to delete your account.</p>
 
 <h2>7. Changes to this policy</h2>
 <p>We may update this policy from time to time and will post any changes on this page.</p>
